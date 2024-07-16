@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="red">Arpit Dai</h1>
+    <h1>Shekhar Dai</h1>
+    <h1>Mohit</h1>
+    <h1 class="red">Ramesh Rai</h1>
+     <button onclick=change()>click me</button>
+</body>
+<script>
+    function change(){
+    let t=document.getElementsByTagName("h1");
+    for(i=0;i<t.length;i++){
+        t[i].style.color="blue";
+    }
+    let h=document.getElementsByClassName("red");
+    for (i=0;i<h.length;i++){
+        h[i].style.color="red";
+    }
+    }
+</script>
+</html>
